@@ -52,7 +52,12 @@ docker network inspect bridge
 Crear Dockerfiles para cada proyecto.
     En el Dockerfile hago etapas de build y ejecucion
 
-Construir y subir las imágenes a Amazon ECR. (esto supongo que es con githubactions)
+Construir y subir las imágenes a Amazon ECR.
+Para cada proyecto se creara un repositorio y en este se subira la imagen
+Tendremos 4 repositorios uno por proyecto y dentro de cada repositorio las imagenes se tagearan como:
+- developo
+- staging 
+- main
 
 
 Crear un cluster de ECS.
